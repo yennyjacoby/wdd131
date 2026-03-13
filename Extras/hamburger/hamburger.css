@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+	position: relative;
+}
+
+h1 {
+	/* position: relative;
+	z-index: 1; put the title behind the menu */
+	font-size: 1rem;
+	padding: 1rem;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+}
+
+p {
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 /0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+/* Mobile View ***************/
+#menu {
+	/* z-index: 10; This makes the menu float above the  instead of being pushed down visually */
+	z-index: 10;
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+	color: #000;
+
+	position: absolute; /*Allows the element to be placed anywhere */
+	top: 1rem;
+	right: 1rem;
+}
+
+/* This creates the mobile menu icon: */
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: #ace;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+/* These line hide the .navigation links by default when the screen is small */
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+/* This line makes the menu appear when the hamburger menu is clicked */
+.show li {
+	display: block;
+}
+
+/* When the menu is opened */
+#menu.show::before {
+	content: "X";
+}
+
+header {
+    position: relative;
+}
+
+
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the 
+design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go 
+into a separate CSS file. 
+*/
+
+/* This section changes the layout when the screen becomes wider than 40em: */
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
