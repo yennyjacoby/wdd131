@@ -83,7 +83,7 @@ nav {
 
 /* When the menu is opened */
 #menu.show::before {
-	content: "X";
+	content: "♡";
 }
 
 header {
