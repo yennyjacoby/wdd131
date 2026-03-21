@@ -1,0 +1,44 @@
+@media (min-width:1200px){
+
+  .hero-wrapper{
+      position: relative;
+      width: 100%;
+  }
+
+  .data,
+  .weather {
+      position: absolute;
+      width: 300px;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(6px);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      z-index: 10;
+  }
+
+  .data {
+      top: 2rem;
+      left: 2rem;
+  }
+
+  .weather {
+      bottom: 2rem;
+      right: 2rem;
+      
+  }
+
+  .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+  }
+
+  .data:hover,
+  .weather:hover {
+      border: 2px solid var(--ends);
+      transition: border 0.3s ease;
+  }
+
+}

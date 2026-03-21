@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Yenny Katherine Jacoby">
+    <meta name="description" content="Information about Iceland such as temperature, population, time zone, and more">
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>ICELAND</h1>
+        </header>
+        <div class="hero-wrapper">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/iceland-large.webp" media="(min-width:1200px)">
+                    <source srcset="images/iceland-medium-screen.webp" media="(min-width:800px)">
+                    <img src="images/iceland-small-mobile.webp" alt="Northern lights in Iceland" width="500" height="750">
+                </picture>
+            </div>
+
+            <section class="data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 103,000 sq km</p>
+                <p><strong>Population:</strong> 390,000</p>
+                <p><strong>Capital:</strong> Reykjavík</p>
+                <p><strong>Language:</strong> Icelandic</p>
+                <p><strong>Currency:</strong> Icelandic króna</p>
+                <p><strong>Time Zone:</strong> Greenwich Mean Time (GMT)</p>
+                <p><strong>Internet TLD:</strong> .is</p>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+                    <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+                    <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+                    </svg>
+                </div>            
+                <p><strong>Temperature:</strong> -1C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 8 km/h</p>
+                <p><strong>Wind Chill:</strong><span id="windChill"></span></p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> ❄️ Yenny Katherine Jacoby ❄️ </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
