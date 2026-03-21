@@ -1,17 +1,11 @@
 :root {
     --icon: rgb(0, 100, 250);
-    --header: rgb(33, 0, 85);
     --main:rgb(227, 225, 218);
     --ends: rgb(222, 236, 242);
     --iceland-flag: rgb(2, 79, 151);
     --iceland-red-flag: rgb(221, 37, 59);
     --background-g: rgb(215, 215, 215);
     --background-translucent: rgb(255, 250, 250, 0.3);
-
-    --translucent: rgba(2, 79, 151, 0.3)
-
-
-
 
 }
 
