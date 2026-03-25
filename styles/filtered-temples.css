@@ -8,7 +8,7 @@
 
 }
 
-p.site-title {
+h1.site-title {
   font-family: "Arizonia", cursive;
   font-weight: 700;
   font-style: normal;
@@ -18,6 +18,19 @@ p.site-title {
   font-size: 2.5rem;
 }
 
+.navigation{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    gap: 1rem;
+    background-color: var(--background-color);
+    color: var(--cloud-color);
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family:'Times New Roman';
+}
 nav ul{
     list-style: none;
     padding: 0;
@@ -38,19 +51,10 @@ nav a:hover{
     background-color: var(--hoover);
     color: var(--darkest);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 
 }
-.navigation{
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    z-index: 20;
-    gap: 1rem;
-    background-color: var(--background-color);
-    color: var(--cloud-color);
-}
+
 
 .navigation.open{
     display: flex;
