@@ -44,6 +44,9 @@ header{
 
 .navigation{
     display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation.open{
@@ -63,9 +66,6 @@ nav a{
     font-style: normal;
 }
 
-nav ul {
-    display: none; /* hamburger menu default */
-}
 
 nav a:hover{
     background-color: var(--Light-b);
@@ -74,6 +74,11 @@ nav a:hover{
     border-radius: 8px;
 }
 
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
 h1{
     font-family: "Boldonse", system-ui;
     font-weight: 400;
@@ -104,7 +109,8 @@ footer{
 /* large.css */
 @media screen and (min-width: 640px) {
     .navigation{
-        display: block;
+        display: flex;
+
     }
 
     main {
