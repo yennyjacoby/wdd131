@@ -103,12 +103,17 @@ footer{
 
 /* large.css */
 @media screen and (min-width: 640px) {
+    .navigation{
+        display: block;
+    }
+
     main {
         grid-template-columns: 1fr 1fr;
     }
 
     nav ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;   
         align-items: center;       
         gap: 2rem;  
@@ -121,10 +126,9 @@ footer{
     nav a{
         padding: .25rem .5rem;
     }
-/* 
-    #hamburger {
+
+    #menu {
         display: none;
     }
-} */
-
 }
+
