@@ -1,0 +1,172 @@
+:root{
+    --main-background: #e2edfd;
+    --titles-background: #003483;
+    --bright: #ffffff;
+    --charcoal: #747474;
+    --light-charcoal: #eaeaea;
+    --dark-charcoal: #2a2a2a;
+    --the-dark: #000000;
+    --star: #deda02;
+    --dark-star: #e3c205;
+    --linear-gradiant1: #005f6f;
+    --linear-gradiant2: #012863;
+    --footer: #e4e4e4;
+
+
+
+
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: var(--main-background);
+}
+
+h1{
+    background-color: var(--titles-background);
+    color: var(--bright);
+    padding: .7rem;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+.form-group{
+    margin-bottom: .5rem;
+    display: flex; /*stack the label and input vertically */
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.stars {
+	display: flex;
+    flex-direction: row-reverse;
+	justify-content: flex-end;
+    margin-top: -30px;
+}
+
+/* HIDE RADIO BUTTONS */
+.stars input[type="radio"] {
+    display: none;
+}
+
+/* BASE STAR STYLE */
+.stars > label::before {
+    content: "\2606"; /* empty star */
+    font-size: 1.5rem;
+    color: var(--charcoal); /* border color */
+    -webkit-text-stroke: 1px var(--charcoal); /* border */
+    text-stroke: 2px var(--the-dark); /* border */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 0 10px;
+}
+
+.stars > label:hover::before {
+    -webkit-text-stroke: 2px var(--the-dark);
+    text-stroke: 2px var(--the-dark);
+}
+
+/* CHECKED (FILLED) STAR */
+.stars input:checked ~ label::before {
+    content: "\2605"; /* filled star */
+    color: var(--star); /* gold fill */
+    -webkit-text-stroke: 2px var(--dark-star); /* stronger border */
+    text-stroke: 3px var(--dark-star);
+}
+
+footer {
+    background-color: var(--footer);
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--titles-background);
+    font-size: .9rem;
+    max-width: 400px;
+
+}
+
+.features {  /*checkbox labels EVEN closer */
+    margin-top: -0.7rem;
+
+}
+
+.features label{ /* YOU NEED TO ADD LABEL IN ORDER TO MAKE "features" WORK */
+    padding-top: 0;      /* removes the 1rem from global label */
+    color: var(--dark-charcoal);      /* your dark gray */
+    margin: 0.25rem;   /* small spacing between checkboxes */
+}
+
+
+.wf1 div{
+    padding-top: 1rem;
+    color: var(--titles-background);
+    font-size: .9rem
+}
+
+#product-name, #review, #name, #installed{
+    font-family: 'Trebuchet MS'; 
+    font-size: medium;
+    background-color: var(--light-charcoal);
+    display: block;
+    border: solid 1px var(--charcoal);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--dark-charcoal);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"]{
+    border:none;
+    background-image: linear-gradient(var(--linear-gradiant1), var(--linear-gradiant2));
+    color: var(--bright);
+    border-radius: 6px;
+    padding: .8rem;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px var(--charcoal);
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wf1 input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.wf1 input:required {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#thanks { 
+    background-color: var(--main-background);
+    color: var(--titles-background);
+    padding: 10px;
+    max-width: 400px;
+    padding: 15px;
+    margin: 50px auto;
+}
