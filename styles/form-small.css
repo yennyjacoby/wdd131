@@ -11,10 +11,6 @@
     --linear-gradiant1: #005f6f;
     --linear-gradiant2: #012863;
     --footer: #e4e4e4;
-
-
-
-
 }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -68,7 +64,6 @@ h1{
     font-size: 1.5rem;
     color: var(--charcoal); /* border color */
     -webkit-text-stroke: 1px var(--charcoal); /* border */
-    text-stroke: 2px var(--the-dark); /* border */
     cursor: pointer;
     transition: all 0.2s ease;
     margin: 0 10px;
@@ -76,15 +71,13 @@ h1{
 
 .stars > label:hover::before {
     -webkit-text-stroke: 2px var(--the-dark);
-    text-stroke: 2px var(--the-dark);
 }
 
 /* CHECKED (FILLED) STAR */
 .stars input:checked ~ label::before {
     content: "\2605"; /* filled star */
     color: var(--star); /* gold fill */
-    -webkit-text-stroke: 2px var(--dark-star); /* stronger border */
-    text-stroke: 3px var(--dark-star);
+    -webkit-text-stroke: 2px var(--dark-star); 
 }
 
 footer {
@@ -165,7 +158,6 @@ label {
 #thanks { 
     background-color: var(--main-background);
     color: var(--titles-background);
-    padding: 10px;
     max-width: 400px;
     padding: 15px;
     margin: 50px auto;
