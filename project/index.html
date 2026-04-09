@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourish on a Budget</title>
+    <meta name="description" content="offering nutritious, budget-friendly breakfast, lunch and dinner ideas for everyday life. It features quick recipes, affordable ingredients, and healthy options like smoothies, oats, and egg dishes."/> 
+    <meta name="author" content="Yenny Katherine Jacoby"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts/nouresh-budget.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+<body>
+    <header>
+        <img src="images/logo1.webp" alt="Nourish on a budget logo" class="logo-image">
+        <button type="button" id="menu"></button>
+       
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+            </ul>    
+        </nav>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 600px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" alt="Nourish on a budget hero image" class="hero-img" loading="lazy">
+        </picture>
+
+        <h1>Nourish on a Budget</h1>
+        <p>Welcome to Nourish on a Budget — 
+            a place where healthy eating meets real‑life simplicity.
+            Here, families can discover affordable, nutritious meals made with everyday ingredients. Whether you’re planning breakfast, lunch, or dinner, you’ll find easy recipes designed to help you eat well, 
+            save money, and enjoy time together around the table.</p>
+        
+        <p>You’ll also find practical 7-day meal ideas for breakfast, lunch, and dinner to make weekly planning easier and stress-free. From quick morning options to satisfying dinners, each idea is created to be budget-friendly, balanced, and simple to prepare—so you can spend less time worrying about meals and more time enjoying them.</p>
+
+        <section class="meals-images">
+            <a href="breakfast.html">
+                <figure>
+                    <img src="images/yogurt-fruit.webp" alt="Healthy breakfast bowl of fruits, ideal for breakfast" loading="lazy">
+                    <figcaption>Breakfast</figcaption>
+                </figure>
+            </a>
+
+            <a href="lunch.html">
+                <figure>
+                    <img src="images/kale-salad.webp" alt="Affordable and nutritious lunch meal; kale and apple salad" loading="lazy">
+                    <figcaption>Lunch</figcaption>
+                </figure>
+            </a>
+            
+            <a href="dinner.html">
+                <figure>
+                    <img src="images/bean-veggie-taco.webp" alt="Budget-friendly dinner plate, bean veggie bean-veggie-taco" loading="lazy">
+                    <figcaption>Dinner</figcaption>
+                </figure>    
+            </a>        
+        </section>
+
+        <button id="random-btn">Get a random meal!</button>
+        <div id="random-meal"></div>
+
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span>| Yenny Katherine Jacoby | Colorado </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>    

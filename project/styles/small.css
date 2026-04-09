@@ -1,0 +1,229 @@
+:root{
+    --Soft-warm: #F7F7F2;
+    --Light-b: #EFEBD8; 
+    --Cool-g: #E3E7E5; 
+    --Charcoal: #2E2E2E; 
+    --title: #82B411;
+    --header-background: #2e4004;
+    --lighter: #fefefe;
+    --btn: #cb5c01;
+    --btn2: #98d900;
+    --dark: #000000;
+
+}
+
+header{
+    background-color: var(--header-background);
+    color: var(--Soft-warm);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo-image{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+
+.hero-section{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: var(--header-background);
+    color: var(--Cool-g);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before{
+    content:"☰";
+}
+
+#menu.open::before{
+    content:"❌";
+}
+
+
+.navigation{
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.open .navigation {
+    display: block;
+}
+
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--Soft-warm);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+nav a:hover{
+    background-color: var(--Light-b);
+    color: var(--Charcoal);
+    padding: .10rem;
+    border-radius: 8px;
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1{
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--title);
+    padding: 2rem;
+}
+
+/* body{
+    background-color: var(--light-background);
+} */
+p{
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.meals-images{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+}
+
+.meals-images img{
+    width: 180px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.meals-images img,a:hover{
+    transform: scale(1.15);
+}
+
+
+
+.meals-images a{
+    text-decoration: none;
+    font-family: "Boldonse", system-ui;
+    text-align: center;
+    color: var(--Charcoal);
+}
+
+.meals-images figcaption {
+    padding-top: 1rem; /* or 1rem if you want more space */
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#recipe-container {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-bottom: 4rem;
+
+}
+
+.recipe-card{
+    background-color: var(--light-background);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--header-background);
+    height: 100%;
+}
+
+.recipe-image {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: "Boldonse", system-ui;
+    text-align: center;
+}
+
+.recipe-title{
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: var(--Charcoal);
+}
+
+
+#random-btn{
+    background-color: var(--btn);
+    color: var(--lighter);
+    padding: 1rem 1.5rem;
+    border: 2px solid #2E2E2E;
+    border-radius: 20px;
+    font-family: "Boldonse", system-ui;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto;
+    transition: background-color 0.3s ease;
+}
+
+#random-btn:hover {
+    background-color: var(--btn2);
+    color: var(--dark);
+}
+
+footer{
+    background-color: var(--header-background);
+    color: var(--Soft-warm);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
