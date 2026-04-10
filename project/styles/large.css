@@ -4,18 +4,18 @@
     --Light-b: #EFEBD8; 
     --Cool-g: #E3E7E5; 
     --Charcoal: #2E2E2E; 
-    --title: #82B411;
+    --title: #527500;
     --header-background: #2e4004;
     }
 
     .meals-images{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 1rem;
     }
 
     .meals-images img{
-        width: 150px;
+        width: 250px;
         height: auto;
         display: block;
         border-radius: 8px;
@@ -56,16 +56,9 @@
         display: none;
     }
 
-
-    #recipe-container {
-        display: grid;
-        gap: 3rem;
-        padding-bottom: 4rem;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-    }
     
+
+
     .recipe-image {
         width: 400px;
         height: auto;
