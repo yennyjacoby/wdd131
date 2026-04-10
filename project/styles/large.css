@@ -1,12 +1,5 @@
 @media only screen and (min-width: 1024px) {
-    :root{
-    --Soft-warm: #F7F7F2;
-    --Light-b: #EFEBD8; 
-    --Cool-g: #E3E7E5; 
-    --Charcoal: #2E2E2E; 
-    --title: #527500;
-    --header-background: #2e4004;
-    }
+
 
     .meals-images{
         display: grid;
@@ -32,12 +25,8 @@
 
     }
 
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
 
     nav ul {
-        display: flex;
         flex-direction: row;
         justify-content: center;   
         align-items: center;       
