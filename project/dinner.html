@@ -6,18 +6,28 @@
     <title>Breakfast</title>
     <meta name="description" content="offering nutritious, budget-friendly dinner recipes, ideas for everyday life. It features quick recipes, affordable ingredients, and healthy options like smoothies, oats, and egg dishes."/> 
     <meta name="author" content="Yenny Katherine Jacoby"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    </noscript>
+
+
     <script src="scripts/nouresh-budget.js" defer></script>
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
 
 </head>
 <body>
     <header>
-        <img src="images/logo1.webp" alt="Nourish on a budget logo" class="logo-image">
+        <img src="images/logo1.webp" alt="Nourish on a budget logo" class="logo-image" width="500" height="583">
         <button type="button" id="menu"></button>
        
         <nav>
